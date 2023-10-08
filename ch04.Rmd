@@ -185,7 +185,7 @@ ggplot(tg, aes(x = dose, y = length)) +
   geom_line()
 ```
 
-This happens because there are multiple data points at each *y* location, and ggplot thinks they're all in one group. The data points for each group are connected with a single line, leading to the sawtooth pattern. If any *discrete* variables are mapped to aesthetics like colour or linetype, they are automatically used as grouping variables. But if you want to use other variables for grouping (that aren't mapped to an aesthetic), they should be used with group.
+This happens because there are multiple data points at each *x* location, and ggplot thinks they're all in one group. The data points for each group are connected with a single line, leading to the sawtooth pattern. If any *discrete* variables are mapped to aesthetics like colour or linetype, they are automatically used as grouping variables. But if you want to use other variables for grouping (that aren't mapped to an aesthetic), they should be used with group.
 
 > **Note**
 >
